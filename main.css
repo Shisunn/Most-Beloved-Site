@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --shadow: rgba(10,10,10,0.1);
+    --shadow-hover: #0003;
+}
+
+
+body{
+    color: #333;
+    background: #eff;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    background: #eef;
+    box-shadow: 0.5px 0.5px var(--shadow-hover);
+    display: flex;
+    margin-bottom: 2.5em;
+}
+
+#navList, li{
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#navList a{
+    display: inline-flex;
+    text-decoration: none;
+    color: #333;
+    padding: 1.2em 1em;
+}
+
+#navList i{
+    margin-right: 5%;
+}
+
+#navList li{
+    display: flex;
+    align-items: center;
+}
+
+div > h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#pageDesc{
+    margin-bottom: 2em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border: 0.5px solid var(--shadow);
+}
+
+.content-card{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2.5em;
+    margin: 0 5em;
+}
+
+.content-item{
+    padding: 1.5vw;
+    box-shadow: 0 0.3em 0.8em -.125em var(--shadow), 0 0 0.8em -.15em rgba(10,10,10,0.2);
+    background-color: #fff;
+}
+
+.content-item:hover{
+    box-shadow: 0 0.1em 0.5em .125em var(--shadow-hover), 0 0.1em 0.5em -.125em var(--shadow-hover);
+    transition: all 0.2s;
+}
+
+.content-item:active{
+    box-shadow: none;
+    margin-top: 2px;
+    transition: all 0.2s;
+}
+
+li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+figcaption{
+    line-height: 1.5em;
+}
+
+h3{
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+figcaption p{
+    font-weight: 400;
+}
+
+footer{
+    margin: 1.3% 0;
+    text-align: center;
+    font-weight: 600;
+    color: #666;
+}
+
+footer a{
+    text-decoration: none;
+    color: #666;
+}
+
+@media only screen and (max-width: 900px){
+    .content-card{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    footer{
+        margin: 4.6vw 0;
+    }
+}

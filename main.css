@@ -11,6 +11,8 @@ body{
     color: #333;
     background: #eff;
     font-family: 'Poppins',sans-serif;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 nav{
@@ -75,12 +77,14 @@ img{
 .content-item:hover{
     box-shadow: 0 0.1em 0.5em .125em var(--shadow-hover), 0 0.1em 0.5em -.125em var(--shadow-hover);
     transition: all 0.2s;
+    -moz-transition: all 0.2s;
 }
 
 .content-item:active{
     box-shadow: none;
     margin-top: 2px;
     transition: all 0.2s;
+    -moz-transition: all 0.2s;
 }
 
 li > a{
